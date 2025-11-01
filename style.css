@@ -1,0 +1,175 @@
+/* Configurações Globais */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Contêiner que simula o smartphone */
+.smartphone-container {
+    width: 414px;
+    height: 896px;
+    background: #1c1c1c;
+    border-radius: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    padding: 18px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.screen {
+    background-color: #E6F5F2; /* Cor de fundo principal do app */
+    height: 100%;
+    border-radius: 22px;
+    position: relative;
+    overflow-y: auto; /* Permite rolar se o conteúdo for maior */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Status Bar (Topo do Celular) */
+.status-bar {
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    right: 30px;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    z-index: 10;
+}
+
+/* Cabeçalho do App */
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 20px 20px;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #4DB59B;
+}
+
+.une-logo {
+    width: 40px;
+    height: 40px;
+}
+
+/* Conteúdo Principal */
+.app-content {
+    padding: 0 20px 20px;
+    flex: 1;
+}
+
+/* Card de Notificação */
+.notification-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.notification-icon {
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.notification-text {
+    flex-grow: 1;
+}
+
+.notification-text p {
+    margin: 0;
+    color: #555;
+}
+
+.notification-text .title {
+    font-weight: bold;
+    color: #333;
+}
+
+.notification-action {
+    background-color: #FF8C42;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.lock-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Card da Carteirinha Digital */
+.digital-id-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.id-main-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.student-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.qr-code {
+    width: 120px;
+    height: 120px;
+}
+
+.student-details h3 {
+    margin: 0 0 15px;
+    font-size: 18px;
+}
+
+.student-details p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.student-details p strong {
+    color: #333;
+}
+
+/* Botão Adicionar à Carteira */
+.add-to-wallet-btn {
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.wallet-icon {
+    width: 30px;
+    margin-right: 10px;
+}

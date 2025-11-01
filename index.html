@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recriação App DNE (Versão Limpa)</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Importando a fonte utilizada (Google Fonts) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="smartphone-container">
+        <div class="screen">
+            <!-- Cabeçalho do App -->
+            <header class="app-header">
+                <span class="logo">dne</span>
+                <img src="https://i.imgur.com/kY7m7YV.png" alt="Logo UNE" class="une-logo">
+            </header>
+
+            <!-- Status Bar do Celular -->
+            <div class="status-bar">
+                <span>9:30</span>
+                <div class="status-icons">
+                    <!-- Ícones de status (Wi-Fi, Bateria) podem ser adicionados aqui -->
+                </div>
+            </div>
+
+            <main class="app-content">
+                <!-- Card de Notificação -->
+                <div class="notification-card">
+                    <div class="notification-icon">🎉</div>
+                    <div class="notification-text">
+                        <p class="title">Uhul! Chegou!</p>
+                        <p>Desbloqueie seu DNE físico e aproveite.</p>
+                    </div>
+                    <div class="notification-action">
+                        <img src="https://i.imgur.com/g9vY0C4.png" alt="Ícone Cadeado" class="lock-icon">
+                    </div>
+                </div>
+
+                <!-- Seção da Carteirinha Digital -->
+                <div class="digital-id-card">
+                    <div class="id-main-info">
+                        <img src="https://i.imgur.com/3Z6Yq71.png" alt="Foto do Estudante" class="student-photo">
+                        <img src="https://i.imgur.com/fJ3z2V1.png" alt="QR Code" class="qr-code">
+                    </div>
+                    <div class="student-details">
+                        <h3>Vitória Batista De Castro</h3>
+                        <p><strong>Ins. Ensino:</strong> Universidade de São Paulo</p>
+                        <p><strong>Curso:</strong> Engenharia de Produção</p>
+                        <p><strong>Nível de ensino:</strong> Graduação</p>
+                        <p><strong>RG:</strong> 33.333.333-33</p>
+                        <p><strong>Data de Nasc:</strong> 01/11/1990</p>
+                        <p><strong>Validade:</strong> Mar/2026</p>
+                    </div>
+                </div>
+
+                <!-- Botão Adicionar à Carteira -->
+                <button class="add-to-wallet-btn">
+                    <img src="https://i.imgur.com/L7iFIBj.png" alt="Apple Wallet Icon" class="wallet-icon">
+                    <span>Adicionar à Carteira da Apple</span>
+                </button>
+            </main>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
