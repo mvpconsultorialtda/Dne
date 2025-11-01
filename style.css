@@ -1,47 +1,25 @@
-/* Configurações Globais */
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+/* Configurações Globais e de Reset */
+* {
     margin: 0;
-    background-color: #f0f0f0;
-    font-family: 'Roboto', sans-serif;
-}
-
-/* Contêiner que simula o smartphone */
-.smartphone-container {
-    width: 414px;
-    height: 896px;
-    background: #1c1c1c;
-    border-radius: 40px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    padding: 18px;
+    padding: 0;
     box-sizing: border-box;
-    position: relative;
-    overflow: hidden;
 }
 
-.screen {
-    background-color: #E6F5F2; /* Cor de fundo principal do app */
+html, body {
     height: 100%;
-    border-radius: 22px;
-    position: relative;
-    overflow-y: auto; /* Permite rolar se o conteúdo for maior */
+    font-family: 'Roboto', sans-serif;
+    background-color: #E6F5F2; /* Cor de fundo do app aplicada à página inteira */
+}
+
+/* Contêiner principal que simula a tela do app */
+.app-container {
+    width: 100%;
+    max-width: 450px; /* Limita a largura em telas grandes (desktops) */
+    min-height: 100vh;
+    margin: 0 auto; /* Centraliza o contêiner na tela */
+    background-color: #E6F5F2; /* Garante a cor de fundo */
     display: flex;
     flex-direction: column;
-}
-
-/* Status Bar (Topo do Celular) */
-.status-bar {
-    position: absolute;
-    top: 15px;
-    left: 30px;
-    right: 30px;
-    color: #333;
-    font-weight: 500;
-    font-size: 16px;
-    z-index: 10;
 }
 
 /* Cabeçalho do App */
@@ -49,18 +27,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px 20px 20px;
+    padding: 40px 20px 20px;
 }
 
-.logo {
-    font-size: 32px;
-    font-weight: bold;
-    color: #4DB59B;
+.logo-dne {
+    height: 35px; /* Ajuste o tamanho conforme sua imagem */
 }
 
-.une-logo {
-    width: 40px;
-    height: 40px;
+.logo-entidade {
+    height: 40px; /* Ajuste o tamanho conforme sua imagem */
 }
 
 /* Conteúdo Principal */
@@ -92,17 +67,22 @@ body {
 .notification-text p {
     margin: 0;
     color: #555;
+    font-size: 14px;
 }
 
 .notification-text .title {
     font-weight: bold;
     color: #333;
+    font-size: 16px;
 }
 
 .notification-action {
     background-color: #FF8C42;
     padding: 10px;
     border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .lock-icon {
@@ -126,24 +106,25 @@ body {
 }
 
 .student-photo {
-    width: 120px;
-    height: 120px;
+    width: 45%;
+    aspect-ratio: 3/4; /* Proporção de foto 3x4 */
     border-radius: 10px;
     object-fit: cover;
 }
 
 .qr-code {
-    width: 120px;
-    height: 120px;
+    width: 45%;
+    aspect-ratio: 1/1; /* QR Code é quadrado */
 }
 
 .student-details h3 {
     margin: 0 0 15px;
     font-size: 18px;
+    color: #111;
 }
 
 .student-details p {
-    margin: 5px 0;
+    margin: 6px 0;
     font-size: 14px;
     color: #666;
 }
