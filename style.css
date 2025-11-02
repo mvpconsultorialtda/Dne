@@ -23,9 +23,17 @@ html, body {
 }
 
 /* Cabeçalho e Notificação */
-.app-header { display: flex; justify-content: flex-start; align-items: center; padding: 40px 20px 20px; }
+.app-header { 
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
+    padding: 40px 30px 20px; /* AUMENTADO */
+}
 .logo-dne { height: 35px; }
-.app-content { padding: 0 20px; flex: 1; }
+.app-content { 
+    padding: 0 30px; /* AUMENTADO */
+    flex: 1; 
+}
 .notification-card { background: #fff; border-radius: 12px; padding: 15px; display: flex; align-items: center; margin-bottom: 20px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); }
 .notification-icon { font-size: 24px; margin-right: 15px; }
 .notification-text { flex-grow: 1; }
@@ -48,41 +56,30 @@ html, body {
 .validity-year-img { position: absolute; bottom: 20px; right: 20px; height: 28px; width: auto; }
 
 /* Rodapé */
-.app-footer { padding: 20px; text-align: center; }
+.app-footer { 
+    padding: 20px 30px; /* AUMENTADO */
+    text-align: center; 
+}
 .footer-text { color: #556B67; font-size: 12px; font-weight: 500; letter-spacing: 0.5px; margin-bottom: 15px; }
-.certificate-btn { background: #fff; color: #333; border: none; border-radius: 50px; padding: 10px 25px; font-size: 16px; font-weight: 500; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); }
+.certificate-btn { 
+    background: #fff; 
+    color: #333; 
+    border: none; 
+    border-radius: 50px; 
+    padding: 10px 25px; 
+    font-size: 16px; 
+    font-weight: 500; 
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    cursor: default; /* ATUALIZADO para não parecer clicável */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+}
 .checkmark-icon { margin-right: 8px; font-size: 20px; }
 
-/* --- ESTILOS PARA A TELA DE BOAS-VINDAS (NOVO) --- */
-#fullscreen-prompt {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #E6F5F2; /* Mesma cor de fundo do app */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    z-index: 1000;
-    cursor: pointer;
-}
-
-.prompt-content {
-    color: #135D66;
-}
-
-.prompt-content h1 {
-    font-size: 28px;
-    margin-bottom: 15px;
-}
-
-.prompt-content p {
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-.prompt-content span {
-    font-size: 40px;
-}
+/* Estilos para a Tela de Boas-Vindas */
+#fullscreen-prompt { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #E6F5F2; display: flex; justify-content: center; align-items: center; text-align: center; z-index: 1000; cursor: pointer; }
+.prompt-content { color: #135D66; }
+.prompt-content h1 { font-size: 28px; margin-bottom: 15px; }
+.prompt-content p { font-size: 16px; margin-bottom: 20px; }
+.prompt-content span { font-size: 40px; }
