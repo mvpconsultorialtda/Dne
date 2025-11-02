@@ -6,13 +6,23 @@
     <title>DNE - Documento Nacional do Estudante</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="app-container">
-        <!-- SEÇÃO SUPERIOR (INTOCADA CONFORME SOLICITADO) -->
+    <!-- TELA DE BOAS-VINDAS PARA ENTRAR EM TELA CHEIA (NOVA) -->
+    <div id="fullscreen-prompt">
+        <div class="prompt-content">
+            <h1>Bem-vindo ao DNE</h1>
+            <p>Toque na tela para continuar em modo de tela cheia.</p>
+            <span>👆</span>
+        </div>
+    </div>
+
+    <!-- SEU APLICATIVO (COMEÇA ESCONDIDO) -->
+    <div class="app-container" style="display: none;">
+        <!-- Cabeçalho do App -->
         <header class="app-header">
             <img src="./imagens/logo-dne.png" alt="Logo DNE" class="logo-dne">
         </header>
@@ -30,7 +40,7 @@
                 </div>
             </div>
 
-            <!-- SEÇÃO DA CARTEIRA (TOTALMENTE REESTRUTURADA) -->
+            <!-- Seção da Carteira -->
             <div class="id-content-wrapper">
                 <div class="id-top-section">
                     <div class="id-box photo-box">
@@ -51,7 +61,6 @@
                     </div>
 
                     <div class="info-block">
-                        <!-- Rótulos em negrito conforme solicitado -->
                         <p><strong>RG:</strong> 1322462526</p>
                         <p><strong>DATA DE NASC:</strong> 27/10/1992</p>
                     </div>
@@ -66,7 +75,7 @@
             </div>
         </main>
         
-        <!-- Rodapé do App (INTOCADO) -->
+        <!-- Rodapé do App -->
         <footer class="app-footer">
             <p class="footer-text">FEDERAÇÃO DOS ESTUDANTES NACIONAL</p>
             <button class="certificate-btn">
