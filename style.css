@@ -22,29 +22,25 @@ html, body {
     flex-direction: column;
 }
 
-/* Cabeçalho do App */
+/* Cabeçalho do App (Ajustado) */
 .app-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start; /* Alinha o único item à esquerda */
     align-items: center;
     padding: 40px 20px 20px;
 }
 
 .logo-dne {
-    height: 35px; /* Ajuste o tamanho conforme sua imagem */
-}
-
-.logo-entidade {
-    height: 40px; /* Ajuste o tamanho conforme sua imagem */
+    height: 35px;
 }
 
 /* Conteúdo Principal */
 .app-content {
-    padding: 0 20px 20px;
-    flex: 1;
+    padding: 0 20px;
+    flex: 1; /* Faz o conteúdo principal crescer e ocupar o espaço */
 }
 
-/* Card de Notificação */
+/* Card de Notificação (Ajustado) */
 .notification-card {
     background: #fff;
     border-radius: 12px;
@@ -78,16 +74,16 @@ html, body {
 
 .notification-action {
     background-color: #FF8C42;
-    padding: 10px;
+    width: 44px;
+    height: 44px;
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.lock-icon {
-    width: 24px;
-    height: 24px;
+.lock-emoji {
+    font-size: 24px;
 }
 
 /* Card da Carteirinha Digital */
@@ -106,51 +102,65 @@ html, body {
 }
 
 .student-photo {
-    width: 45%;
-    aspect-ratio: 3/4; /* Proporção de foto 3x4 */
+    width: 48%;
+    aspect-ratio: 3/4;
     border-radius: 10px;
     object-fit: cover;
 }
 
 .qr-code {
-    width: 45%;
-    aspect-ratio: 1/1; /* QR Code é quadrado */
+    width: 48%;
+    aspect-ratio: 1/1;
 }
 
 .student-details h3 {
     margin: 0 0 15px;
     font-size: 18px;
     color: #111;
+    font-weight: 700;
 }
 
 .student-details p {
     margin: 6px 0;
     font-size: 14px;
-    color: #666;
+    color: #333; /* Texto um pouco mais escuro para legibilidade */
 }
 
 .student-details p strong {
-    color: #333;
+    font-weight: 500;
+    color: #555;
 }
 
-/* Botão Adicionar à Carteira */
-.add-to-wallet-btn {
-    background: #000;
-    color: #fff;
+/* Rodapé do App (Novo) */
+.app-footer {
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-text {
+    color: #556B67;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+}
+
+.certificate-btn {
+    background: #fff;
+    color: #333;
     border: none;
-    border-radius: 10px;
-    padding: 15px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 50px; /* Totalmente arredondado */
+    padding: 10px 25px;
     font-size: 16px;
     font-weight: 500;
-    margin-top: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.wallet-icon {
-    width: 30px;
-    margin-right: 10px;
+.checkmark-icon {
+    margin-right: 8px;
+    font-size: 20px; /* Ajusta o tamanho do emoji */
 }

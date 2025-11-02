@@ -12,15 +12,14 @@
 <body>
 
     <div class="app-container">
-        <!-- Cabeçalho do App -->
+        <!-- Cabeçalho do App (Ajustado) -->
         <header class="app-header">
             <img src="./imagens/logo-dne.png" alt="Logo DNE" class="logo-dne">
-            <img src="./imagens/logo-entidade.png" alt="Logo da Entidade" class="logo-entidade">
         </header>
 
         <!-- Conteúdo Principal do App -->
         <main class="app-content">
-            <!-- Card de Notificação -->
+            <!-- Card de Notificação (Ajustado) -->
             <div class="notification-card">
                 <div class="notification-icon">🎉</div>
                 <div class="notification-text">
@@ -28,7 +27,7 @@
                     <p>Desbloqueie seu DNE físico e aproveite.</p>
                 </div>
                 <div class="notification-action">
-                    <img src="./imagens/lock-icon.png" alt="Ícone Cadeado" class="lock-icon">
+                    <span class="lock-emoji">🔒</span>
                 </div>
             </div>
 
@@ -48,13 +47,16 @@
                     <p><strong>Validade:</strong> 31/03/2026</p>
                 </div>
             </div>
-
-            <!-- Botão Adicionar à Carteira -->
-            <button class="add-to-wallet-btn">
-                <img src="./imagens/wallet-icon.png" alt="Ícone da Carteira" class="wallet-icon">
-                <span>Adicionar à Carteira da Apple</span>
-            </button>
         </main>
+        
+        <!-- Rodapé do App (Novo) -->
+        <footer class="app-footer">
+            <p class="footer-text">FEDERAÇÃO DOS ESTUDANTES NACIONAL</p>
+            <button class="certificate-btn">
+                <span class="checkmark-icon">✅</span>
+                Certificado
+            </button>
+        </footer>
     </div>
 
     <script src="script.js"></script>
