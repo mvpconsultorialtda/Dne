@@ -7,25 +7,26 @@
 
 html, body {
     height: 100%;
-    font-family: 'Roboto', sans-serif;
-    background-color: #E6F5F2; /* Cor de fundo do app aplicada à página inteira */
+    /* Alterando para a fonte 'Inter' que é mais similar à referência */
+    font-family: 'Inter', sans-serif;
+    background-color: #E6F5F2; 
 }
 
-/* Contêiner principal que simula a tela do app */
+/* Contêiner principal */
 .app-container {
     width: 100%;
-    max-width: 450px; /* Limita a largura em telas grandes (desktops) */
+    max-width: 450px;
     min-height: 100vh;
-    margin: 0 auto; /* Centraliza o contêiner na tela */
-    background-color: #E6F5F2; /* Garante a cor de fundo */
+    margin: 0 auto;
+    background-color: #E6F5F2;
     display: flex;
     flex-direction: column;
 }
 
-/* Cabeçalho do App (Ajustado) */
+/* Cabeçalho */
 .app-header {
     display: flex;
-    justify-content: flex-start; /* Alinha o único item à esquerda */
+    justify-content: flex-start;
     align-items: center;
     padding: 40px 20px 20px;
 }
@@ -37,10 +38,10 @@ html, body {
 /* Conteúdo Principal */
 .app-content {
     padding: 0 20px;
-    flex: 1; /* Faz o conteúdo principal crescer e ocupar o espaço */
+    flex: 1;
 }
 
-/* Card de Notificação (Ajustado) */
+/* Card de Notificação */
 .notification-card {
     background: #fff;
     border-radius: 12px;
@@ -51,54 +52,28 @@ html, body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-.notification-icon {
-    font-size: 24px;
-    margin-right: 15px;
-}
+.notification-icon { font-size: 24px; margin-right: 15px; }
+.notification-text { flex-grow: 1; }
+.notification-text p { margin: 0; color: #555; font-size: 14px; }
+.notification-text .title { font-weight: bold; color: #333; font-size: 16px; }
+.notification-action { background-color: #FF8C42; width: 44px; height: 44px; border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+.lock-emoji { font-size: 24px; }
 
-.notification-text {
-    flex-grow: 1;
-}
+/* --- SEÇÃO DA CARTEIRINHA DIGITAL (ATUALIZADA) --- */
 
-.notification-text p {
-    margin: 0;
-    color: #555;
-    font-size: 14px;
-}
-
-.notification-text .title {
-    font-weight: bold;
-    color: #333;
-    font-size: 16px;
-}
-
-.notification-action {
-    background-color: #FF8C42;
-    width: 44px;
-    height: 44px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.lock-emoji {
-    font-size: 24px;
-}
-
-/* Card da Carteirinha Digital */
 .digital-id-card {
     background: #fff;
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    position: relative; /* Essencial para posicionar a imagem de validade */
 }
 
 .id-main-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px; /* Aumenta o espaço antes do texto */
 }
 
 .student-photo {
@@ -113,25 +88,35 @@ html, body {
     aspect-ratio: 1/1;
 }
 
-.student-details h3 {
-    margin: 0 0 15px;
-    font-size: 18px;
-    color: #111;
-    font-weight: 700;
-}
-
-.student-details p {
-    margin: 6px 0;
+/* Novo container para os detalhes do texto */
+.id-details {
+    color: #333;
     font-size: 14px;
-    color: #333; /* Texto um pouco mais escuro para legibilidade */
+    line-height: 1.5;
+    text-transform: uppercase; /* Deixa todo o texto em maiúsculas */
 }
 
-.student-details p strong {
-    font-weight: 500;
-    color: #555;
+.student-name {
+    font-weight: 700; /* Deixa o nome em negrito */
+    font-size: 16px;
+    margin-bottom: 15px; /* Espaço após o nome */
 }
 
-/* Rodapé do App (Novo) */
+/* Estilo para os blocos de informação */
+.info-block {
+    margin-bottom: 15px; /* Espaço entre os blocos */
+}
+
+/* Imagem de Validade (Novo) */
+.validity-year-img {
+    position: absolute; /* Posicionamento exato */
+    bottom: 20px; /* Distância da base */
+    right: 20px;  /* Distância da direita */
+    height: 28px; /* Altura da imagem */
+    width: auto;
+}
+
+/* Rodapé do App */
 .app-footer {
     padding: 20px;
     text-align: center;
@@ -149,7 +134,7 @@ html, body {
     background: #fff;
     color: #333;
     border: none;
-    border-radius: 50px; /* Totalmente arredondado */
+    border-radius: 50px;
     padding: 10px 25px;
     font-size: 16px;
     font-weight: 500;
@@ -162,5 +147,5 @@ html, body {
 
 .checkmark-icon {
     margin-right: 8px;
-    font-size: 20px; /* Ajusta o tamanho do emoji */
+    font-size: 20px;
 }

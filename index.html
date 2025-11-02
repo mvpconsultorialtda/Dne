@@ -7,19 +7,20 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Usando a fonte Inter para maior similaridade com a referência -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="app-container">
-        <!-- Cabeçalho do App (Ajustado) -->
+        <!-- Cabeçalho do App -->
         <header class="app-header">
             <img src="./imagens/logo-dne.png" alt="Logo DNE" class="logo-dne">
         </header>
 
         <!-- Conteúdo Principal do App -->
         <main class="app-content">
-            <!-- Card de Notificação (Ajustado) -->
+            <!-- Card de Notificação -->
             <div class="notification-card">
                 <div class="notification-icon">🎉</div>
                 <div class="notification-text">
@@ -31,25 +32,40 @@
                 </div>
             </div>
 
-            <!-- Seção da Carteirinha Digital -->
+            <!-- Seção da Carteirinha Digital (TOTALMENTE ATUALIZADA) -->
             <div class="digital-id-card">
                 <div class="id-main-info">
                     <img src="./imagens/foto-estudante.jpg" alt="Foto do Estudante" class="student-photo">
                     <img src="./imagens/qr-code.png" alt="QR Code" class="qr-code">
                 </div>
-                <div class="student-details">
-                    <h3>Felipe Pedreira Carvalho</h3>
-                    <p><strong>Ins. Ensino:</strong> Anhanguera</p>
-                    <p><strong>Curso:</strong> ADM</p>
-                    <p><strong>Nível de ensino:</strong> Pós - Graduação</p>
-                    <p><strong>RG:</strong> 1322462526</p>
-                    <p><strong>Data de Nasc:</strong> 27/10/1992</p>
-                    <p><strong>Validade:</strong> 31/03/2026</p>
+                
+                <!-- Detalhes do estudante com novo layout e estilo -->
+                <div class="id-details">
+                    <p class="student-name">LETÍCIA ALVES</p>
+                    
+                    <div class="info-block">
+                        <p>UNIVERSIDADE FEDERAL FLUMINENSE</p>
+                        <p>ODONTOLOGIA</p>
+                        <p>GRADUAÇÃO</p>
+                    </div>
+
+                    <div class="info-block">
+                        <p>CPF: 123.456.789-10</p>
+                        <p>DATA DE NASC: 10/11/2005</p>
+                    </div>
+
+                    <div class="info-block">
+                        <p>COD. USO</p>
+                        <p>06.789/53</p>
+                    </div>
                 </div>
+
+                <!-- Imagem de validade -->
+                <img src="./imagens/validade-2025.png" alt="Validade 2025" class="validity-year-img">
             </div>
         </main>
         
-        <!-- Rodapé do App (Novo) -->
+        <!-- Rodapé do App -->
         <footer class="app-footer">
             <p class="footer-text">FEDERAÇÃO DOS ESTUDANTES NACIONAL</p>
             <button class="certificate-btn">
