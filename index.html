@@ -7,72 +7,57 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Usando a fonte Inter para maior similaridade com a referência -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="app-container">
-        <!-- Cabeçalho do App -->
-        <header class="app-header">
-            <img src="./imagens/logo-dne.png" alt="Logo DNE" class="logo-dne">
-        </header>
-
-        <!-- Conteúdo Principal do App -->
-        <main class="app-content">
-            <!-- Card de Notificação -->
-            <div class="notification-card">
-                <div class="notification-icon">🎉</div>
-                <div class="notification-text">
-                    <p class="title">Uhul! Chegou!</p>
-                    <p>Desbloqueie seu DNE físico e aproveite.</p>
-                </div>
-                <div class="notification-action">
-                    <span class="lock-emoji">🔒</span>
-                </div>
-            </div>
-
-            <!-- Seção da Carteirinha Digital -->
-            <div class="digital-id-card">
-                <div class="id-main-info">
-                    <img src="./imagens/foto-estudante.jpg" alt="Foto do Estudante" class="student-photo">
-                    <img src="./imagens/qr-code.png" alt="QR Code" class="qr-code">
-                </div>
-                
-                <!-- Detalhes do estudante com os dados do Felipe -->
-                <div class="id-details">
-                    <p class="student-name">FELIPE PEDREIRA CARVALHO</p>
-                    
-                    <div class="info-block">
-                        <p>ANHANGUERA</p>
-                        <p>ADM</p>
-                        <p>PÓS - GRADUAÇÃO</p>
-                    </div>
-
-                    <div class="info-block">
-                        <p>RG: 1322462526</p>
-                        <p>DATA DE NASC: 27/10/1992</p>
-                    </div>
-
-                    <div class="info-block">
-                        <p>COD. USO</p>
-                        <p>5D5-BEE3N</p>
-                    </div>
-                </div>
-
-                <!-- Imagem de validade -->
-                <img src="./imagens/validade-2025.png" alt="Validade 2025" class="validity-year-img">
-            </div>
-        </main>
+    <div class="card-container">
         
-        <!-- Rodapé do App -->
-        <footer class="app-footer">
+        <!-- Seção Superior com Foto e QR Code -->
+        <section class="top-section">
+            <div class="image-wrapper">
+                <img src="./imagens/foto-estudante.jpg" alt="Foto do Estudante" class="student-photo">
+            </div>
+            <div class="image-wrapper">
+                <img src="./imagens/qr-code.png" alt="QR Code" class="qr-code">
+            </div>
+        </section>
+
+        <!-- Seção de Informações (Card Branco) -->
+        <section class="info-card">
+            <div class="id-details">
+                <p class="student-name">FELIPE PEDREIRA CARVALHO</p>
+                
+                <div class="info-block">
+                    <p>ANHANGUERA</p>
+                    <p>ADM</p>
+                    <p>PÓS - GRADUAÇÃO</p>
+                </div>
+
+                <div class="info-block">
+                    <!-- Rótulos em negrito -->
+                    <p><strong>RG:</strong> 1322462526</p>
+                    <p><strong>DATA DE NASC:</strong> 27/10/1992</p>
+                </div>
+
+                <div class="info-block">
+                    <p>COD. USO</p>
+                    <p>5D5-BEE3N</p>
+                </div>
+            </div>
+            
+            <img src="./imagens/validade-2025.png" alt="Validade 2025" class="validity-year-img">
+        </section>
+
+        <!-- Seção Inferior (Rodapé) -->
+        <footer class="card-footer">
             <p class="footer-text">FEDERAÇÃO DOS ESTUDANTES NACIONAL</p>
             <button class="certificate-btn">
                 <span class="checkmark-icon">✅</span>
                 Certificado
             </button>
         </footer>
+
     </div>
 
     <script src="script.js"></script>
