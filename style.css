@@ -8,67 +8,79 @@
 html, body {
     height: 100%;
     font-family: 'Inter', sans-serif;
-    /* Cor de fundo principal da carteirinha */
-    background-color: #BDE0D6; 
+    background-color: #E6F5F2; 
 }
 
-/* Container principal que agora é a própria carteirinha */
-.card-container {
+/* Contêiner principal */
+.app-container {
     width: 100%;
-    max-width: 450px; /* Limita a largura em telas grandes */
+    max-width: 450px;
     min-height: 100vh;
-    margin: 0 auto; /* Centraliza */
-    background-color: #BDE0D6;
+    margin: 0 auto;
+    background-color: #E6F5F2;
     display: flex;
     flex-direction: column;
-    padding: 25px;
 }
 
-/* Seção superior com Foto e QR Code */
-.top-section {
+/* Cabeçalho e Notificação (INTOCADOS) */
+.app-header { display: flex; justify-content: flex-start; align-items: center; padding: 40px 20px 20px; }
+.logo-dne { height: 35px; }
+.app-content { padding: 0 20px; flex: 1; }
+.notification-card { background: #fff; border-radius: 12px; padding: 15px; display: flex; align-items: center; margin-bottom: 20px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); }
+.notification-icon { font-size: 24px; margin-right: 15px; }
+.notification-text { flex-grow: 1; }
+.notification-text p { margin: 0; color: #555; font-size: 14px; }
+.notification-text .title { font-weight: bold; color: #333; font-size: 16px; }
+.notification-action { background-color: #FF8C42; width: 44px; height: 44px; border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+.lock-emoji { font-size: 24px; }
+
+/* --- SEÇÃO DA CARTEIRA (REESTRUTURADA) --- */
+
+.id-top-section {
     display: flex;
     justify-content: space-between;
     gap: 15px; /* Espaço entre a foto e o QR code */
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
-.image-wrapper {
-    background-color: #fff;
+/* Estilo base para os novos cards brancos */
+.id-box {
+    background: #fff;
     border-radius: 12px;
-    padding: 8px; /* Pequena borda interna */
-    width: 48%; /* Ocupa quase metade da tela */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+}
+
+.photo-box {
+    width: 48%;
 }
 
 .student-photo {
     width: 100%;
-    aspect-ratio: 3/4;
-    border-radius: 8px;
-    object-fit: cover;
     display: block;
+    border-radius: 8px; /* Borda interna da foto */
+}
+
+.qr-box {
+    width: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .qr-code {
     width: 100%;
-    aspect-ratio: 1/1;
-    border-radius: 8px;
     display: block;
 }
 
-/* Card branco de informações */
-.info-card {
-    background: #fff;
-    border-radius: 12px;
+/* Card principal com os detalhes do texto */
+.details-box {
+    width: 100%;
     padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    position: relative; /* Para posicionar a imagem de validade */
-    flex-grow: 1; /* Faz este card ocupar o espaço restante */
-}
-
-.id-details {
+    position: relative;
     color: #333;
     font-size: 14px;
-    line-height: 1.6;
+    line-height: 1.5;
     text-transform: uppercase;
 }
 
@@ -81,13 +93,11 @@ html, body {
 .info-block {
     margin-bottom: 15px;
 }
-
 /* Estilo para os rótulos em negrito */
-.info-block strong {
-    font-weight: 700; /* Garante o negrito */
+.info-block p strong {
+    font-weight: 700;
 }
 
-/* Imagem de Validade */
 .validity-year-img {
     position: absolute;
     bottom: 20px;
@@ -96,37 +106,8 @@ html, body {
     width: auto;
 }
 
-/* Rodapé */
-.card-footer {
-    padding: 25px 0 10px; /* Espaçamento acima e abaixo */
-    text-align: center;
-}
-
-.footer-text {
-    color: #556B67;
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-}
-
-.certificate-btn {
-    background: #fff;
-    color: #333;
-    border: 1px solid #ddd; /* Borda sutil como na referência */
-    border-radius: 50px;
-    padding: 10px 25px;
-    font-size: 16px;
-    font-weight: 500;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
-
-.checkmark-icon {
-    margin-right: 8px;
-    font-size: 20px;
-}
+/* Rodapé (INTOCADO) */
+.app-footer { padding: 20px; text-align: center; }
+.footer-text { color: #556B67; font-size: 12px; font-weight: 500; letter-spacing: 0.5px; margin-bottom: 15px; }
+.certificate-btn { background: #fff; color: #333; border: none; border-radius: 50px; padding: 10px 25px; font-size: 16px; font-weight: 500; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); }
+.checkmark-icon { margin-right: 8px; font-size: 20px; }
